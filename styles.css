@@ -1,0 +1,14 @@
+.box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .img-cover img {
+  height: 300px;
+ width: 400px;
+ overflow: hidden;
+ 
+    object-fit: cover;
+  }
+

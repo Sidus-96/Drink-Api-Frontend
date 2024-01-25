@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Drink recipes</title>
+  </head>
+  <body>
+    <button onclick="testpost()" type="submit" class="btn btn-primary">
+      testa post
+    </button>
+    <br />
+    <br />
+    <br />
+    <div class="box">
+      <button onclick="showDrinkForm()" type="submit" class="btn btn-primary">
+        Add a drink
+      </button>
+    </div>
+
+    <div class="flex-container">
+      <br />
+
+      <div class="box">
+        <form id="form-add-drink">
+          <div class="form-group">
+            <label>Add a drink!</label>
+            <input
+              id="name-input"
+              type="text"
+              class="form-control"
+              placeholder="Enter name of the drink"
+            />
+            <label>Id</label>
+            <input
+              id="id-input"
+              type="number"
+              class="form-control"
+              placeholder="Enter new id"
+            />
+          </div>
+          <div class="form-group">
+            <label>Instructions</label>
+            <textarea
+              id="instructions-input"
+              class="form-control"
+              placeholder="How do you make it?"
+              rows="2"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label>How many ingredients are needed?</label>
+            <select class="form-control" id="InputNumberOfIngredients">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
+
+          <div id="container-ingredients" class="form-group">
+            <label>Add a ingredient</label>
+            <input
+              id="ingredient-input0"
+              type="text"
+              class="form-control"
+              placeholder="Enter ingredient"
+            />
+          </div>
+          <br />
+          <button id="btn-add-drink" class="btn btn-primary">
+            Add your drink!
+          </button>
+        </form>
+      </div>
+
+      <div></div>
+      <div id="container-drinks" class="row"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
