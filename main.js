@@ -93,6 +93,7 @@ function testpost() //bara för att testa Post metoden
     body: JSON.stringify(newDrink),
 
   });
+  getDrinks()
 }
 
 
